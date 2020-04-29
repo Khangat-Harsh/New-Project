@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+	* {box-sizing: border-box;}
+    
+    input[type=text], input[type=number], select, textarea {
+    	width: 100%;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	padding: 12px;
+    	resize: vertical;
+    }
+
+    .col-25 {
+    	width: 25%;
+    	margin-top: 6px;
+    	float: left;
+    }
+
+    .col-75 {
+    	width: 75%;
+    	margin-top: 6px;
+    	float: left;
+    }
+
+    label {
+    	padding-left: 12px 12px 12px 0px;
+    	display: inline-block;
+    }
+
+    input[type=submit] {
+    	padding: 15px 18px;
+    	background-color: #4CAF50;
+    	border: none;
+    	border-radius: 4px;
+    	cursor: pointer;
+    	float: right;
+    	color: white;
+    }
+
+    input[type=submit]:hover {
+        background-color: green;
+    }
+
+    .row:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+
+    .container {
+    	padding: 20px;
+    	border-radius: 6px;
+    	background-color: #eee;
+    }
+
+    @media screen and (max-width: 600px) {
+    	.col-25, .col-75, input[type=submit] {
+    		width: 100%;
+    		margin-top: 0;
+    	}
+    }
+
+    body {counter-reset: Select;}
+
+    h2::before {
+    	counter-increment: Select;
+    	content: "Select "counter(Select)": ";
+    }
+
+    .imb {
+    	border: 110px solid transparent;
+    	padding: 15px;
+    	border-image: url(secfn1.png) 30% round;
+    	background-color: #000;
+    	color: #fff;
+    	background-origin: border-box;
+    }
+  
+
+</style>
+
+	<title>new</title>
+</head>
+<body>
+
+<h1>New form</h1>
+
+<div class="container">
+<form>
+	<div class="row">
+		<div class="col-25">
+			<label for="Fname">First Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" name="Fname" id="Fname" placeholder="First name..">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="Lname">Last Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" name="Lname" id="Lname" placeholder="Last name..">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="mname">Mother Name</label>
+		</div>
+		<div class="col-75">
+			<input type="text" name="Mname" id="mname" placeholder="Mother name..">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="cname">College</label>
+		</div>
+		<div class="col-75">
+			<input type="text" name="Cname" id="cname" placeholder="College name..">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="age">Age</label>
+		</div>
+		<div class="col-75">
+			<input type="number" name="Age" id="age" placeholder="Age">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="city">City</label>
+		</div>
+		<div class="col-75">
+			<select>
+				<option>Delhi</option>
+				<option>Mumbai</option>
+				<option>Chennai</option>
+				<option>Kolkata</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-25">
+			<label for="msg">Your message</label>
+		</div>
+		<div class="col-75">
+			<textarea placeholder="Your message here.."></textarea>
+		</div>
+	</div>
+
+	<input type="submit" name="Submit">
+</form>
+</div>
+
+<div>
+	<h1>Section selection</h1>
+	<h2>HTML</h2>
+	<h2>CSS</h2>
+	<h2>JavaScript</h2>
+	<h2>PHP</h2>
+</div>
+
+<p class="imb">This is img brf</p>
+
+</body>
+</html>
